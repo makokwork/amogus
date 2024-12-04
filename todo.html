@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добавление человека</title>
+    <link rel="stylesheet" href="./css/database.css" />
+  </head>
+  <body>
+    <div id="popup-container"></div>
+    <h1>Добавление человека</h1>
+    <form id="form">
+      <label>
+        Имя
+        <input type="text" id="name" />
+      </label>
+      <label>
+        Фамилия
+        <input type="text" id="surname" />
+      </label>
+      <button type="submit">Добавить</button>
+      <button type="button" id="reset-button" class="button-second">Очистить таблицу</button>
+    </form>
+    <h2>Список</h2>
+    <table id="list-container">
+      <thead>
+        <tr>
+          <th>Имя Фамилия</th>
+        </tr>
+      </thead>
+      <tbody id="list"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
